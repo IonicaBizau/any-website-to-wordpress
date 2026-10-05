@@ -1,0 +1,129 @@
+{
+  "name": "any-website-to-wordpress",
+  "version": "1.0.0",
+  "description": "Crawl, scrape, preview and migrate any website to WordPress",
+  "main": "config.js",
+  "type": "module",
+  "scripts": {
+    "crawl": "node scripts/crawl.js",
+    "preview": "node scripts/preview.js",
+    "reset": "node scripts/reset-wordpress-content.js",
+    "migrate": "node scripts/migrate.js"
+  },
+  "keywords": [],
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.20.0",
+    "cheerio": "^1.2.0",
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "fs-extra": "^11.4.1",
+    "p-limit": "^7.3.3"
+  },
+  "blah": {},
+  "homepage": "https://github.com/IonicaBizau/any-website-to-wordpress#readme",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "scripts/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js",
+    "index.d.ts",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/any-website-to-wordpress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/any-website-to-wordpress/issues"
+  },
+  "blah": {
+    "installation_command": {
+      "content": [
+        "git clone https://github.com/IonicaBizau/any-website-to-wordpress.git",
+        "cd any-website-to-wordpress",
+        "npm install"
+      ],
+      "language": "bash"
+    },
+    "installation": [
+      "### Configuration",
+      "Create a `.env` file in the root of the project and add your configuration variables.",
+      "For example:",
+      {
+        "code": {
+          "content": [
+            "# The source website",
+            "SOURCE_URL=https://example.com",
+            "",
+            "# The WordPress site",
+            "WP_URL=https://new.bunulsamariteanbeius.ro/",
+            "WP_USERNAME=Bloggify",
+            "WP_APP_PASSWORD=\"...\"",
+            "",
+            "# Menu configuration",
+            "MENU_NAME=Main Menu",
+            "",
+            "# Request settings",
+            "REQUEST_DELAY=200",
+            "CONCURRENCY=5",
+            "RESOURCE_CONCURRENCY=8",
+            "",
+            "# Preview server",
+            "PREVIEW_PORT=3000"
+          ],
+          "language": "bash"
+        }
+      },
+      "### 1. Crawl",
+      "Run the crawl step:",
+      {
+        "code": {
+          "content": [
+            "npm run crawl"
+          ],
+          "language": "bash"
+        }
+      },
+      "### 2. Preview",
+      "Run the preview step:",
+      {
+        "code": {
+          "content": [
+            "npm run preview"
+          ],
+          "language": "bash"
+        }
+      },
+      "### 3. Reset",
+      "Run the reset step if you need to delete the media/posts/pages from the existing WordPress website.",
+      {
+        "code": {
+          "content": [
+            "npm run reset"
+          ],
+          "language": "bash"
+        }
+      },
+      "### 4. Migrate",
+      "Run the migrate step:",
+      {
+        "code": {
+          "content": [
+            "npm run migrate"
+          ],
+          "language": "bash"
+        }
+      }
+    ]
+  }
+}
