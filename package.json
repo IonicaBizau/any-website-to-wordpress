@@ -21,31 +21,6 @@
     "fs-extra": "^11.4.1",
     "p-limit": "^7.3.3"
   },
-  "blah": {},
-  "homepage": "https://github.com/IonicaBizau/any-website-to-wordpress#readme",
-  "files": [
-    "bin/",
-    "app/",
-    "lib/",
-    "dist/",
-    "src/",
-    "scripts/",
-    "resources/",
-    "menu/",
-    "cli.js",
-    "index.js",
-    "index.d.ts",
-    "bloggify.js",
-    "bloggify.json",
-    "bloggify/"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/IonicaBizau/any-website-to-wordpress.git"
-  },
-  "bugs": {
-    "url": "https://github.com/IonicaBizau/any-website-to-wordpress/issues"
-  },
   "blah": {
     "installation_command": {
       "content": [
@@ -125,5 +100,29 @@
         }
       }
     ]
+  },
+  "homepage": "https://github.com/IonicaBizau/any-website-to-wordpress#readme",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "scripts/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js",
+    "index.d.ts",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/any-website-to-wordpress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/any-website-to-wordpress/issues"
   }
 }
