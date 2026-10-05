@@ -98,7 +98,7 @@ npm run preview
 ```
 
 ### 3. Reset
-Run the reset step if you need to delete the media/posts/pages from the existing Wordpress website.
+Run the reset step if you need to delete the media/posts/pages from the existing WordPress website.
 ```bash
 npm run reset
 ```
